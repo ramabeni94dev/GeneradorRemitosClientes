@@ -1,3 +1,5 @@
+![Ejemplo de GIF](./gif.gif)
+
 # Iniciando la Aplicación GeneradorRemitosClientes
 
 ¡Bienvenido! Esta guía te llevará a través de los pasos para configurar y ejecutar la aplicación GeneradorRemitosClientes en tu entorno local.
@@ -84,5 +86,3 @@ password: "1234",
 ## Problemas y Soporte
 
 Si encuentras algún problema durante estos pasos, no dudes en consultar la documentación o crear un problema en este repositorio. Estaremos encantados de ayudarte.
-
-![Ejemplo de GIF](./giphy.gif)
