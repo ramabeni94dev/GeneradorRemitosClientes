@@ -1,4 +1,4 @@
-![Ejemplo de GIF](./gif.gif)
+![Ejemplo de GIF](./giphy.gif)
 
 # Iniciando la Aplicación GeneradorRemitosClientes
 
