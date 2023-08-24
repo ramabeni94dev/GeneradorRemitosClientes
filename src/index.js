@@ -68,75 +68,9 @@ app.use(passport.session());
 const users = [
   {
     id: 1,
-    username: "ttorres@gottert.com.ar",
-    password: "ttorres01",
-    name: "TOMAS TORRES",
-  },
-  {
-    id: 2,
-    username: "fscozzina@gottert.com.ar",
-    password: "fscozzina01",
-    name: "FABRIZIO",
-  },
-  {
-    id: 3,
-    username: "dmiranda@gottert.com.ar",
-    password: "dmiranda01",
-    name: "DARIO",
-  },
-  {
-    id: 4,
-    username: "rbenitez@gottert.com.ar",
-    password: "rbenitez01",
-    name: "RAMIRO",
-  },
-  {
-    id: 5,
-    username: "lgoni@gottert.com.ar",
-    password: "lgoni01",
-    name: "LUCIA",
-  },
-  {
-    id: 6,
-    username: "dlabrin@gottert.com.ar",
-    password: "dlabrin01",
-    name: "DIEGO LABRIN",
-  },
-  {
-    id: 7,
-    username: "nicolas@gottert.com.ar",
-    password: "nicolas01",
-    name: "NICOLAS",
-  },
-  {
-    id: 8,
-    username: "sherbes@gottert.com.ar",
-    password: "sherbes01",
-    name: "SEBASTIAN",
-  },
-  {
-    id: 9,
-    username: "enigorra@gottert.com.ar",
-    password: "enigorra01",
-    name: "ENZO",
-  },
-  {
-    id: 10,
-    username: "ctombion@gottert.com.ar",
-    password: "ctombion01",
-    name: "CRISTIAN",
-  },
-  {
-    id: 11,
-    username: "jmonsalvo@gottert.com.ar",
-    password: "jmonsalvo01",
-    name: "JONATAN",
-  },
-  {
-    id: 12,
-    username: "mortega@gottert.com.ar",
-    password: "mortega01",
-    name: "MAURO",
+    username: "usuario1",
+    password: "1234",
+    name: "invitado",
   },
   // Agrega más usuarios aquí...
 ];

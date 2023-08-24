@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile # Tu Dockerfile de desarrollo
+    ports:
+      - "5000:3001"
+    volumes:
+      - .:/app # Monta tu código fuente en el contenedor
