@@ -84,3 +84,5 @@ password: "1234",
 ## Problemas y Soporte
 
 Si encuentras algún problema durante estos pasos, no dudes en consultar la documentación o crear un problema en este repositorio. Estaremos encantados de ayudarte.
+
+![Ejemplo de GIF](./bloggif_64e791c923dd3.gif)
