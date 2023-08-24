@@ -1,0 +1,122 @@
+.user {
+  color: rgb(62, 204, 30);
+}
+
+/* Light Mode Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Light Mode Styles */
+body {
+  background-color: #f8f9fa !important;
+  color: #000 !important;
+}
+
+.navbar-light .navbar-text {
+  color: #000 !important; /* Light mode text color */
+}
+
+.navbar-light .btn-outline-light {
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+.btn-outline-light:hover {
+  background-color: #007bff; /* Cambia el color de fondo en el hover */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #202020 !important;
+  color: #fff !important;
+}
+
+.dark-mode .navbar-text {
+  color: #fff !important; /* Dark mode text color */
+}
+
+.dark-mode .btn-outline-light {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+/* Navbar Background Styles */
+.navbar {
+  background-color: #f0db66 !important;
+}
+
+.dark-mode .navbar {
+  background-color: #343a40 !important;
+}
+
+/* Footer Styles */
+footer {
+  background: fixed;
+  color: #000 !important;
+}
+
+.dark-mode footer {
+  background-color: #343a40 !important;
+  color: #fff !important;
+}
+
+/* Light Mode Styles */
+.card-body {
+  background-color: #f8f9fa !important;
+  color: #000 !important;
+  border: 1px solid #000; /* Add a border in light mode */
+  border-radius: 5px;
+}
+
+.card-title,
+.card-text {
+  color: #000 !important;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .card-body {
+  background-color: #343a40 !important;
+  color: #fff !important;
+  border: none; /* Remove the border in dark mode */
+}
+
+body.dark-mode .card-title,
+body.dark-mode .card-text {
+  color: #fff !important;
+  border: none; /* Remove the border in dark mode */
+}
+
+/* Estilo para el texto del menú en modo nocturno */
+.dark-mode .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Estilos para el modo nocturno */
+.dark-mode .navbar,
+.dark-mode .form-group label {
+  color: #fff;
+}
+
+.dark-mode body {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#searchButton {
+  background-color: #337ab7;
+  color: white;
+}
+
+/* Añadir margen superior al contenedor de resultados */
+#searchResults {
+  margin-top: 20px;
+}

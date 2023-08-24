@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar cliente</title>
+    <link rel="stylesheet" href="/css/clientes.css" />
+    <%- include("partials/head") %>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <%- include("partials/navigation") %>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <h1>Agregar Clientes</h1>
+      <form>
+        <div class="mb-3">
+          <label for="razonSocial" class="form-label">Razón Social:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="razonSocial"
+            name="razonSocial"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="nombreFantasia" class="form-label"
+            >Nombre Fantasía:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="nombreFantasia"
+            name="nombreFantasia"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="cuit" class="form-label">Cuit:</label>
+          <input type="text" class="form-control" id="cuit" name="cuit" />
+        </div>
+
+        <div class="mb-3">
+          <label for="direccion1Fact" class="form-label"
+            >Dirección de Facturación:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="direccion1Fact"
+            name="direccion1Fact"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="localidadFact" class="form-label"
+            >Localidad de Facturación:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="localidadFact"
+            name="localidadFact"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="DescripcionZona" class="form-label">Zona:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="DescripcionZona"
+            name="DescripcionZona"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="codPostalFact" class="form-label"
+            >Código Postal de Facturación:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="codPostalFact"
+            name="codPostalFact"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="provinciaIdFact" class="form-label"
+            >Provincia ID de Facturación:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="provinciaIdFact"
+            name="provinciaIdFact"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="text" class="form-control" id="email" name="email" />
+        </div>
+
+        <div class="mb-3">
+          <label for="telefonos" class="form-label">Teléfonos:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="telefonos"
+            name="telefonos"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="condFiscId" class="form-label"
+            >Condición Fiscal ID:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="condFiscId"
+            name="condFiscId"
+          />
+        </div>
+      </form>
+      <div class="container custom-container mt-4">
+        <div class="text-center">
+          <a
+            href="javascript:void(0);"
+            onclick="return enviarPorWhatsApp();"
+            class="btn btn-success btn-block custom-link"
+          >
+            <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+          </a>
+        </div>
+        <div class="text-center mt-2">
+          <a
+            href="javascript:void(0);"
+            onclick="return enviarPorEmail();"
+            class="btn btn-success btn-block custom-link"
+          >
+            <i class="far fa-envelope"></i> Enviar por Email
+          </a>
+        </div>
+        <div class="text-center mt-2">
+          <button
+            type="button"
+            class="btn btn-success btn-block custom-link"
+            id="subirBtn"
+          >
+            <i class="fas fa-cloud-upload-alt"></i> Subir a Base de datos
+          </button>
+        </div>
+      </div>
+
+      <h2>Resultado:</h2>
+      <pre id="resultado"></pre>
+      <p id="successMessage"></p>
+    </div>
+
+    <!-- FOOTER -->
+    <%- include("partials/footer") %>
+
+    <!-- JAVASCRIPT CDNS -->
+
+    <script src="/script/generarjson.js"></script>
+    <script src="/script/nigthday.js"></script>
+    <script type="module" src="/script/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  </body>
+</html>
