@@ -1,8 +1,6 @@
-![Ejemplo de GIF](./giphy.gif)
+﻿![Ejemplo de GIF](./giphy.gif)
 
 # Iniciando la Aplicación GeneradorRemitosClientes
-
-¡Bienvenido! Esta guía te llevará a través de los pasos para configurar y ejecutar la aplicación GeneradorRemitosClientes en tu entorno local.
 
 ## Acerca de la Aplicación
 
@@ -22,53 +20,55 @@ La aplicación GeneradorRemitosClientes fue creada con el propósito de simplifi
 3. Agrega nuevos clientes proporcionando la información necesaria.
 4. Consulta, edita o elimina la información de los clientes según sea necesario.
 
+![Ejemplo de GIF](./giphy.gif)
+
 # Iniciando la Aplicación GeneradorRemitosClientes
 
-¡Bienvenido! Esta guía te llevará a través de los pasos para configurar y ejecutar la aplicación GeneradorRemitosClientes en tu entorno local.
+Esta guía te llevará a través de los pasos para configurar y ejecutar la aplicación GeneradorRemitosClientes en tu entorno local.
 
 ## Paso 1: Clonar el Repositorio
 
 Primero, clona este repositorio en tu máquina local:
 
+```shell
 git clone https://github.com/ramabeni94dev/GeneradorRemitosClientes.git
 cd GeneradorRemitosClientes
-
+```
 ## Paso 2: Instalar Dependencias
 
-Utilizaremos npm para instalar las dependencias necesarias. Ejecuta el siguiente comando en tu terminal:
-
-npm install
+Asegurate de de tener Docker instalado en tu máquina, si no sigue los pasos según tu sistema operativo: 
+https://docs.docker.com/get-docker/
 
 ## Paso 3: Configurar Credenciales de Firebase
 
 Asegúrate de crear un archivo .env en la raíz del proyecto y coloca las credenciales de Firebase dentro del mismo:
-
+```plaintext
 FIREBASE_API_KEY=<TU_API_KEY>
 FIREBASE_AUTH_DOMAIN=<TU_AUTH_DOMAIN>
 FIREBASE_PROJECT_ID=<TU_PROJECT_ID>
 FIREBASE_STORAGE_BUCKET=<TU_STORAGE_BUCKET>
 FIREBASE_MESSAGING_SENDER_ID=<TU_MESSAGING_SENDER_ID>
 FIREBASE_APP_ID=<TU_APP_ID>
-
+```
 ## Paso 4: Crear la Imagen Docker
 
 Construiremos una imagen Docker para la aplicación. Abre tu terminal y ejecuta:
-
+```shell
 docker build -t appgeneradorremitosclientes:v1 .
-
+```
 ## Paso 5: Verificar la Imagen Docker
 
 Verifica que la imagen se haya creado correctamente ejecutando:
-
+```shell
 docker images
-
+```
 ## Paso 6: Ejecutar la Aplicación Localmente
 
 Para ejecutar la aplicación en tu entorno local, utilizaremos Docker Compose. Ejecuta:
-
+```shell
 docker-compose up
-
-## Paso 7:Acceder a la Aplicación
+```
+## Paso 7: Acceder a la Aplicación
 
 Una vez que la aplicación esté en funcionamiento, abre tu navegador web y ve a la siguiente dirección:
 
@@ -79,10 +79,10 @@ http://localhost:5000
 ## Inicio de Sesión
 
 La aplicación GeneradorRemitosClientes utiliza un sistema de inicio de sesión. Puedes utilizar las siguientes credenciales para acceder a la aplicación:
-
+```plaintext
 username: "usuario1",
 password: "1234",
-
+```
 ## Problemas y Soporte
 
 Si encuentras algún problema durante estos pasos, no dudes en consultar la documentación o crear un problema en este repositorio. Estaremos encantados de ayudarte.
